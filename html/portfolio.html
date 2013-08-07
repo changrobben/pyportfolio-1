@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+	<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<body>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/jquery.min.js"></script>
+
+<div class="container">
+  <div class="row">
+    <div class="span4">
+		<h3 class="text-success">人民币 {{cash_cny}}</h3>
+    </div>
+	<div class="span4">
+		<h3>美元 {{cash_usd}}</h3>
+    </div>
+	<div class="span4">
+		<h3>港元 {{cash_hkd}}</h3>
+    </div>
+  </div>
+  <div class="row">
+	<div class="span12">
+	</div>
+  </div>
+  <div class="row">	
+    <div class="span12">
+  {{ data|safe }}
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
